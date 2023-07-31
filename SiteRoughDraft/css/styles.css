@@ -1,0 +1,65 @@
+#wrapper {
+    width: 960px;
+    margin: 0 auto; /*center the wrapper*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+header {
+    width: 960px;
+    background-color: #444;
+    margin: 0 auto;
+}
+
+nav {
+    width: 960px;/*128px per box times 4 boxes with the current nav bar. This will change with each box added to the list*/
+    margin: 0 auto; /*center the navigation buttons*/
+    
+}
+
+nav ul {
+    list-style-type: none; /*Take away the bullet points*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /*specifies that if your content is too big for the box it will just be hidden instead of scrolling or overlapping */
+}
+
+nav li {
+    float: left; /*force the list items to float beside one another rather than be a vertical list*/
+    font-family: 'Oswald', sans-serif; /*you can declare any set of fonts here*/
+      font-size: 1.4em; /*makes the font bigger than the rest of the normal links*/
+      line-height: 50px;
+      height: 50px; /*specifies how tall your navigation buttons are going to be*/
+}
+
+nav a:link, nav a:visited {
+    display: block; /*display a block around each <a> tag*/
+    width: 120px; /*the block will be however wide you specify here*/
+    color: white; /*make the text in the <a> tags whatever color you specify here*/
+    background-color: #444; /*make the box whatever color you specify here*/
+    text-align: center; /*align the <a> tags to the center of the box*/
+    text-decoration: none; /*this takes away the underline of the <a> tag*/
+    transition: .3s background-color ; /*this animates the color for when you scroll over the box*/
+}
+
+nav a:hover, nav a:active {
+    background-color: #218C8D; /*when you scroll over or click on the <a> tag, the box will turn this color*/
+}
+
+nav #plains {
+    background-color: #CC9343;
+}
+nav #forest {
+    background-color: #2D8A67;
+}
+nav #desert {
+    background-color: #CC6D43;
+}
+nav #coast {
+    background-color: #315D84;
+}
+
